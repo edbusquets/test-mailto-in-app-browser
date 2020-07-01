@@ -9,6 +9,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
+
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -19,6 +22,7 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   providers: [
     StatusBar,
+    InAppBrowser,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
